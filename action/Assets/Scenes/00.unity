@@ -2482,7 +2482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 7727700733418387053}
-  maxLife: 3
+  maxLife: 10
   lifeText: {fileID: 1453323108}
 --- !u!1 &5517423976314931386
 GameObject:

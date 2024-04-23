@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.InputSystem.InputAction;
 
 public class PlayerMove : MonoBehaviour, Controls.IGameControlsActions
 {
+    private InputActionAsset inputAsset;
+    private InputActionMap player;
+    //private InputAction move;
+
     [SerializeField] GameObject body;
     Controls controls;
     [SerializeField] float moveSpeed = 1;
@@ -23,14 +28,18 @@ public class PlayerMove : MonoBehaviour, Controls.IGameControlsActions
 
     private void Awake()
     {
+        inputAsset = this.GetComponent<PlayerInput>().actions;
+        player = inputAsset.FindActionMap("GameControls");
         controls = new Controls();
         controls.GameControls.SetCallbacks(this);
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        controls.GameControls.Enable();
+        //controls.GameControls.Enable();
+        player.Enable();
         anim = body.GetComponent<Animator>();
     }
 
@@ -120,8 +129,12 @@ public class PlayerMove : MonoBehaviour, Controls.IGameControlsActions
 
     private void OnDestroy()
     {
-        controls.GameControls.Disable();
+        //controls.GameControls.Disable();
+        player.Disable();
     }
 
-
+    public void OnJoin(CallbackContext context)
+    {
+        return;
+    }
 }

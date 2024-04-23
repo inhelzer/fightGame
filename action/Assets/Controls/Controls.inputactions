@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Join",
+                    "type": "Button",
+                    "id": "eb94d073-da8d-489d-a815-6aa1a2308d32",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -49,7 +58,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "keyboard;keyBoard",
                     "action": "Kik",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -60,7 +69,7 @@
                     "path": "<HID::USB gamepad>/button6",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "gamepad",
                     "action": "Kik",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -71,7 +80,7 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "keyBoard",
                     "action": "punch",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -82,7 +91,7 @@
                     "path": "<HID::USB gamepad>/button2",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "gamepad",
                     "action": "punch",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -93,7 +102,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "keyBoard",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -104,7 +113,7 @@
                     "path": "<HID::USB gamepad>/button3",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "gamepad",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -126,7 +135,7 @@
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "keyBoard",
                     "action": "horizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -137,40 +146,7 @@
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "horizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "1D Axis",
-                    "id": "90f4635e-aeaf-4f0b-b91f-4dfbe16094c3",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "horizontal",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "7d67bb01-524c-4d42-a9ed-a13a75c36494",
-                    "path": "<Joystick>/stick/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "horizontal",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "0c46ff3e-b3b2-4b25-8d32-ffefbb349f33",
-                    "path": "<Joystick>/stick/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
+                    "groups": "keyBoard",
                     "action": "horizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -192,7 +168,7 @@
                     "path": "<HID::USB gamepad>/stick/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "gamepad",
                     "action": "horizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -203,13 +179,58 @@
                     "path": "<HID::USB gamepad>/stick/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "gamepad",
                     "action": "horizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "99d806e9-b3f3-408c-bf5c-378a0e5fd4d6",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyBoard",
+                    "action": "Join",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9f951ad0-4896-4d7a-a71b-2352a67e0ef6",
+                    "path": "<HID::USB gamepad>/button10",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Join",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "keyBoard",
+            "bindingGroup": "keyBoard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "gamepad",
+            "bindingGroup": "gamepad",
+            "devices": [
+                {
+                    "devicePath": "<HID::USB gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }

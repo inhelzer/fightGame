@@ -62,6 +62,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Join"",
+                    ""type"": ""Button"",
+                    ""id"": ""eb94d073-da8d-489d-a815-6aa1a2308d32"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -71,7 +80,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""keyboard;keyBoard"",
                     ""action"": ""Kik"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -82,7 +91,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<HID::USB gamepad>/button6"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""gamepad"",
                     ""action"": ""Kik"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -93,7 +102,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""keyBoard"",
                     ""action"": ""punch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -104,7 +113,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<HID::USB gamepad>/button2"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""gamepad"",
                     ""action"": ""punch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -115,7 +124,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""keyBoard"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -126,7 +135,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<HID::USB gamepad>/button3"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""gamepad"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -148,7 +157,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""keyBoard"",
                     ""action"": ""horizontal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -159,40 +168,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""horizontal"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""1D Axis"",
-                    ""id"": ""90f4635e-aeaf-4f0b-b91f-4dfbe16094c3"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""horizontal"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""7d67bb01-524c-4d42-a9ed-a13a75c36494"",
-                    ""path"": ""<Joystick>/stick/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""horizontal"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""0c46ff3e-b3b2-4b25-8d32-ffefbb349f33"",
-                    ""path"": ""<Joystick>/stick/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""keyBoard"",
                     ""action"": ""horizontal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -214,7 +190,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<HID::USB gamepad>/stick/left"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""gamepad"",
                     ""action"": ""horizontal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -225,15 +201,60 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""path"": ""<HID::USB gamepad>/stick/right"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""gamepad"",
                     ""action"": ""horizontal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""99d806e9-b3f3-408c-bf5c-378a0e5fd4d6"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""keyBoard"",
+                    ""action"": ""Join"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9f951ad0-4896-4d7a-a71b-2352a67e0ef6"",
+                    ""path"": ""<HID::USB gamepad>/button10"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Join"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""keyBoard"",
+            ""bindingGroup"": ""keyBoard"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""gamepad"",
+            ""bindingGroup"": ""gamepad"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<HID::USB gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // GameControls
         m_GameControls = asset.FindActionMap("GameControls", throwIfNotFound: true);
@@ -241,6 +262,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_GameControls_punch = m_GameControls.FindAction("punch", throwIfNotFound: true);
         m_GameControls_Jump = m_GameControls.FindAction("Jump", throwIfNotFound: true);
         m_GameControls_horizontal = m_GameControls.FindAction("horizontal", throwIfNotFound: true);
+        m_GameControls_Join = m_GameControls.FindAction("Join", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -306,6 +328,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_GameControls_punch;
     private readonly InputAction m_GameControls_Jump;
     private readonly InputAction m_GameControls_horizontal;
+    private readonly InputAction m_GameControls_Join;
     public struct GameControlsActions
     {
         private @Controls m_Wrapper;
@@ -314,6 +337,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @punch => m_Wrapper.m_GameControls_punch;
         public InputAction @Jump => m_Wrapper.m_GameControls_Jump;
         public InputAction @horizontal => m_Wrapper.m_GameControls_horizontal;
+        public InputAction @Join => m_Wrapper.m_GameControls_Join;
         public InputActionMap Get() { return m_Wrapper.m_GameControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -335,6 +359,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @horizontal.started += instance.OnHorizontal;
             @horizontal.performed += instance.OnHorizontal;
             @horizontal.canceled += instance.OnHorizontal;
+            @Join.started += instance.OnJoin;
+            @Join.performed += instance.OnJoin;
+            @Join.canceled += instance.OnJoin;
         }
 
         private void UnregisterCallbacks(IGameControlsActions instance)
@@ -351,6 +378,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @horizontal.started -= instance.OnHorizontal;
             @horizontal.performed -= instance.OnHorizontal;
             @horizontal.canceled -= instance.OnHorizontal;
+            @Join.started -= instance.OnJoin;
+            @Join.performed -= instance.OnJoin;
+            @Join.canceled -= instance.OnJoin;
         }
 
         public void RemoveCallbacks(IGameControlsActions instance)
@@ -368,11 +398,30 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         }
     }
     public GameControlsActions @GameControls => new GameControlsActions(this);
+    private int m_keyBoardSchemeIndex = -1;
+    public InputControlScheme keyBoardScheme
+    {
+        get
+        {
+            if (m_keyBoardSchemeIndex == -1) m_keyBoardSchemeIndex = asset.FindControlSchemeIndex("keyBoard");
+            return asset.controlSchemes[m_keyBoardSchemeIndex];
+        }
+    }
+    private int m_gamepadSchemeIndex = -1;
+    public InputControlScheme gamepadScheme
+    {
+        get
+        {
+            if (m_gamepadSchemeIndex == -1) m_gamepadSchemeIndex = asset.FindControlSchemeIndex("gamepad");
+            return asset.controlSchemes[m_gamepadSchemeIndex];
+        }
+    }
     public interface IGameControlsActions
     {
         void OnKik(InputAction.CallbackContext context);
         void OnPunch(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnHorizontal(InputAction.CallbackContext context);
+        void OnJoin(InputAction.CallbackContext context);
     }
 }
